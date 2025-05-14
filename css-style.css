@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+h1,h2, .orginal {
+    font-family: 'Noto Serif', Serif;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+ 
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a5d8ff;
+
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.proverb-card {
+    background-color: white;
+    border-left: 5px solid #4a90e2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 180px;
+}
+
+.proverb-card:hover {
+    transform: translateY(-5px);
+}
+
+.translation {
+    font-style: italic;
+    color: #666;
+}
+
+.meaning {
+    display: none;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.proverb-card:hover .meaning {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.proverb-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+.proverb-form label {
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+.proverb-form textarea,
+.proverb-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.proverb-form button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.proverb-form button:hover {
+    background-color: #2e5984;
+}
+
+.footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #d0e4ff;
+ text-decoration: none;
+ margin: 0 10px;
+ font-size: 1.3em;
+transition: color 0.3 ease;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer img {
+    margin-bottom: 10px;
+}
+.social-icons {
+    margin-top: 10px;
+}
